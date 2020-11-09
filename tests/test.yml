@@ -1,7 +1,7 @@
 ---
 - hosts: localhost
   roles:
-    - virt_customize
+    - virt-customize-ansible-modules
   become: yes
   tasks:
     - virt_customize_package:
