@@ -122,7 +122,7 @@ RETURN = '''
     ]
 '''
 
-from virt_customize.module_utils.libguestfs.libguestfs import guest
+from ../virt_customize.module_utils.libguestfs.libguestfs import guest
 # from virt_customize.module_utils.basic import AnsibleModule ## No module named basic?
 
 import re

@@ -2,7 +2,7 @@
 - hosts: localhost
   gather_facts: False
   roles:
-    - virt-customize-ansible-modules
+    - virt_customize
   become: yes
   tasks:
     - virt_customize_package:

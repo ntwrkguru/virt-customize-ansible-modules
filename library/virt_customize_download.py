@@ -100,7 +100,7 @@ RETURN = '''
     "example": "d6fe77f000341b5f9a952e744f34901a"
 '''
 
-from virt_customize.module_utils.libguestfs.libguestfs import guest
+from ../virt_customize.module_utils.libguestfs.libguestfs import guest
 # from virt_customize.module_utils.basic import AnsibleModule ## No module named basic?
 
 import os
