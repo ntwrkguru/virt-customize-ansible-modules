@@ -1,71 +1,38 @@
-# virt-customize Ansible Modules
+Role Name
+=========
 
-**Note:** This is a POC repo
+A brief description of the role goes here.
 
-**Note:** Due to it being a POC repo, code isn't optimized.
+Requirements
+------------
 
-virt-customize Ansible modules allow users to use Ansible to automate commonly used libguestfs actions in a native way.
+Any pre-requisites that may not be covered by Ansible itself or the role should be mentioned here. For instance, if the role uses the EC2 module, it may be a good idea to mention in this section that the boto package is required.
 
-## Prerequisites:
+Role Variables
+--------------
 
-On Ansible Controller:
-* Ansible >= 2.4.0 (May work on earlier releases)
-* Python >= 2.7.5 || Python >= 3.4
-* gcc
+A description of the settable variables for this role should go here, including any variables that are in defaults/main.yml, vars/main.yml, and any variables that can/should be set via parameters to the role. Any variables that are read from other roles and/or the global scope (ie. hostvars, group vars, etc.) should be mentioned here as well.
 
-On Ansible Host:
-* gcc
-* libguestfs
-* libguestfs-devel
-* Python >= 2.7.5 || Python >= 3.4
-* libguestfs python bindings:
-    * System:
-      If your distribution's package manager contains `python-libguestfs`, install it (via `yum`, `apt` ...)
-    * pip:
-      If a virtual environment is used or you do not have a pre packaged `python-libguestfs`, refer to [guestfs python bindings in a virtualenv](http://libguestfs.org/guestfs-python.3.html#using-python-bindings-in-a-virtualenv)
-      In order to install via pip download the relevant version from `http://download.libguestfs.org/python/`
-      Example, `http://download.libguestfs.org/python/guestfs-1.36.10.tar.gz`
+Dependencies
+------------
 
-## Compatibility Matrix
-:heavy_check_mark: - Fully Supported and tested
+A list of other roles hosted on Galaxy should go here, plus any details in regards to parameters that may need to be set for other roles, or variables that are used from other roles.
 
-:heavy_exclamation_mark: - Supported and not tested or partial support
+Example Playbook
+----------------
 
-:x: - Not supported
+Including an example of how to use your role (for instance, with variables passed in as parameters) is always nice for users too:
 
-| Distro             | Supported                | Notes           |
-|:------------------:|:------------------------:|:---------------:|
-| Fedora/CentOS/RHEL | :heavy_check_mark:       |                 |
-| Ubuntu             | :heavy_check_mark:       |                 |
-| Debian             | :heavy_check_mark:       |                 |
-| Windows            | :x:                      | Not Implemented |
+    - hosts: servers
+      roles:
+         - { role: username.rolename, x: 42 }
 
-## Documentation
+License
+-------
 
-Please refer to [repo's documentation](/docs) for more information
+BSD
 
-## Installation
+Author Information
+------------------
 
-TODO: Host on PyPI
-
-### Install from remote:
-```
-pip install git+https://github.com/vkhitrin/virt-customize-ansible-modules
-```
-
-### Install from cloned repo
-```
-git clone https://github.com/VKhitrin/virt-customize-ansible-modules
-cd virt-cusomize-ansible-modules
-pip install .
-```
-
-## Uninstallation
-
-```
-pip uninstall virt-customize-ansible-modules
-```
-
-## License
-
-This project is licensed under GPL-3.0 License. Please see the [COPYING.md](/COPYING.md) for more information.
+An optional section for the role authors to include contact information, or a website (HTML is not allowed).
