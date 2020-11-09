@@ -1,10 +1,11 @@
 ---
 - hosts: localhost
+  gather_facts: False
   roles:
     - virt-customize-ansible-modules
   become: yes
   tasks:
     - virt_customize_package:
-        image: '/tmp/CentOS-7-x86_64-GenericCloud-1809.qcow2'
+        image: '/tmp/bionic-server-cloudimg-amd64.img'
         name: vim
         state: present
